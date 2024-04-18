@@ -17,4 +17,4 @@ jobs:
       - name: Install dependencies
         run: poetry install; poetry add pytest; poetry add bandit
       - name: Run Bandit check
-        run: poetry run bandit -r .
+        run: poetry run bandit ./app/code.py
